@@ -1,8 +1,0 @@
-data/GdM_C3_fwi.bin
-data/velocity_model.bin
-283
-910
-758
-201
-201
-201

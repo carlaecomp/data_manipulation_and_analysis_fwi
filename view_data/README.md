@@ -50,7 +50,7 @@ python3 view_seismogram.py param_seismogram.txt
 ../data/view/dobs_v401.bin
 ../data/view/figures/
 16
-401
+4001
 0
 201
 ``````

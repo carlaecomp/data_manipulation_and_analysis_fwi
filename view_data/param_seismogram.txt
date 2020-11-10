@@ -1,5 +1,5 @@
-../data/view/dobs_v401.bin
-../data/view/figures/
+../data/view/dobs.bin
+figures/
 16
 401
 0

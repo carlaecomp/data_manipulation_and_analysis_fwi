@@ -9,7 +9,7 @@ python3 view_model.py param_model.txt
 ``````
 
 ### Format of param_model.txt
-* name of velocity model
+* path from the velocity model
 * folder wich the images will saved
 * nz of the initial velocity model
 * ny of the initial velocity model

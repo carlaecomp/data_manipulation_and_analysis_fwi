@@ -1,4 +1,6 @@
 ../data/view/dobs_v401.bin
+../data/view/figures/
 16
 401
-101
+0
+201

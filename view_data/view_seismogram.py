@@ -6,13 +6,17 @@ import matplotlib.pyplot as plt
 # Read and separe the params
 param_file_name = sys.argv[1:][0]
 param_file = open(param_file_name, 'r+b')
-[file_initial, n_src, n1, n2] = param_file.readlines()
+[file_initial, folder_name, n_src, ns, gxi, gxf] = param_file.readlines()
+folder_name = folder_name[0:len(folder_name)-1]
+folder_name = folder_name.decode('utf-8')
 
 # Prepare the params
 file_initial = file_initial[0:len(file_initial)-1]
 n_src = int(n_src)
-n1 = int(n1)
-n2 = int(n2)
+ns = int(ns)
+gxi = int(gxi)
+gxf = int(gxf)
+n = int((gxf-gxi)/2 + 1)
 
 # Open initial model
 with open(file_initial, 'rb') as fid:
@@ -23,7 +27,7 @@ with open(file_initial, 'rb') as fid:
 print(len(data))
 
 # Change the vector to a 4D matrix
-data = data.reshape(n_src, n2, n2, n1)
+data = data.reshape(n_src, n, n, ns)
 
 # Select just a sismo from each shot
 for i in range(n_src):
@@ -32,6 +36,6 @@ for i in range(n_src):
     plt.imshow(grid, cmap='gray',aspect='auto')
     plt.colorbar()
     plt.tight_layout()
-    name_file = "data_" + str(i) + ".png"
+    name_file = folder_name+"seismogram_" + str(i) + ".png"
     plt.savefig(name_file, format='png')
     plt.clf()

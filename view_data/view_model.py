@@ -33,10 +33,11 @@ grid = np.transpose(grid)
 plt.imshow(grid, aspect='auto')
 plt.colorbar()
 plt.tight_layout()
-name_file = str(folder_name)+'model2D.png'
-print (name_file)
-plt.savefig(name_file, format='png')
-plt.clf()
+plt.show()
+# name_file = str(folder_name)+'model2D.png'
+# print (name_file)
+# plt.savefig(name_file, format='png')
+# plt.clf()
 
 # Plot the data as a 3D Plot
 data_temp = data[0]
@@ -45,6 +46,7 @@ ax = plt.axes(projection='3d')
 ax.plot_surface(x,y,data_temp, rstride=5, cstride=1, cmap='viridis', edgecolor='none')
 ax.view_init(azim=120)
 plt.draw()
-name_file = folder_name+"model3D.png"
-plt.savefig(name_file, format='png')
-plt.clf()
+# name_file = folder_name+"model3D.png"
+# plt.savefig(name_file, format='png')
+# plt.clf()
+plt.show()

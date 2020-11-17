@@ -1,0 +1,3 @@
+../data/same/GdM_C3_mamute_201.bin
+../data/same/velocity.bin
+double

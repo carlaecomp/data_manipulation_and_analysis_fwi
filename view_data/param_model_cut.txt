@@ -1,0 +1,5 @@
+../data/convert/velocity_cut.bin
+../data/view/figures/cut/
+100
+100
+100

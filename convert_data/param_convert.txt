@@ -1,0 +1,8 @@
+../data/convert/GdM_C3_fwi.bin
+../data/same/GdM_C3_mamute_201.bin
+283
+910
+758
+201
+201
+201

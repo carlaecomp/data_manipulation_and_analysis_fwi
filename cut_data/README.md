@@ -1,11 +1,11 @@
 # Put the model as a Mamute velocity model input
 Scripts to manipulation the data of mamute
 
-## Convert
-Script to convert the model zxy to zyx
+## Cut the model
+
 ### How to run:
 ``````
-python3 convert.py data/param.txt
+python3 cut_model.py param_cut.txt
 ``````
 
 ### Format of param.txt
@@ -20,12 +20,12 @@ python3 convert.py data/param.txt
 
 #### Example of param.txt
 ``````
-data/GdM_C3_fwi.bin
-data/velocity_model.bin
-283
-910
-758
+../data/convert/velocity.bin
+../data/convert/velocity_cut.bin
 201
 201
 201
+100
+100
+100
 ``````

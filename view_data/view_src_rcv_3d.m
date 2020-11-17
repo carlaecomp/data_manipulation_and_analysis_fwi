@@ -1,20 +1,13 @@
 % Autor: Tiago Tavares
 %%
-zi=4; %gz
-space=2; %dgx
-space_s = 40; %dsx
-g0=0; %gxi
-gf=201; % gxf
+zi=4; %gz final coordinate
+space=5; %dgx delta from the receivers
+space_s = 20; %dsx delta from the source
+g0=0; %gxi receiver initial coordinate
+gf=100 % gxf receiver final coordinate
 
-dh=25; %dx dy dz
-dt=0.001;
-f=5; %fpeak
-bw = 30;
+dh=10; %dx dy dz
 
-xp=40; %sxi 
-yp=40; %syi
-zp=35;
-% xs=11; ys=11; zs=6;
 
 %%
 
@@ -25,7 +18,7 @@ nys=length(1:space_s:gf);
 xs = [];
 ys = [];
 
-nsrc = 169; %n_src
+nsrc = 36; %n_src
 if nsrc >= nxs*nys
     nsrc=nxs*nys;
 end

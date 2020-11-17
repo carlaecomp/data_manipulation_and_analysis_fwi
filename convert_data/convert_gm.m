@@ -1,21 +1,22 @@
 % Autor: Tiago Tavares
-a = fopen("GdM_C3_fwi.bin");
+a = fopen("../data/convert/GdM_C3_400.bin");
 b = fread(a, "float");
 
 fclose(a);
 nz = 283;
-ny = 910;
-nx = 758;
+ny = 283;
+nx = 283;
 bb = reshape(b, nz,nx,ny);
-bb = bb(1:201,1:201,1:201);
-imagesc(bb(:,:,1))
-figure
-surf(bb(:,:,1))
-% cc=permute(bb, [1,3,2]);
-% ccc = cc(1:201,1:201,1:201);
+X = bb(:,:,1);
+imagesc(X)
+figure;
+cc=permute(bb, [1,3,2]);
+ccc = cc(1:201,1:201,1:201);
 % 
-% dd=ccc(:);
-% d = fopen("velocity.bin",'w');
-% fwrite(d, dd, 'double');
-% fclose(d);
+X = ccc(:,:,1);
+imagesc(X)
+dd=ccc(:);
+d = fopen("velocity.bin",'w');
+fwrite(d, dd, 'double');
+fclose(d);
 

@@ -1,0 +1,5 @@
+../data/convert/GdM_C3_283.bin
+../data/view/figures/
+283
+283
+283

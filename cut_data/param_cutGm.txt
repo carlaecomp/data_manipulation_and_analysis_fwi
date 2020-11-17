@@ -1,0 +1,9 @@
+../data/convert/GdM_C3_fwi.bin
+../data/convert/GdM_C3_283.bin
+float
+283
+910
+758
+283
+283
+283
